@@ -13,6 +13,9 @@ manual playtests; the complete cached-start GUI playtest and clean-machine beta
 installer tests remain outstanding. Artwork distribution confirmation and owner
 release approval also remain outstanding. See [release preparation](docs/RELEASING.md).
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8897979f-c2e1-4445-974b-b810f0a8fca8" />
+
+
 ## Features
 
 - In-memory Nucleo matching, targeted typo correction and local/web result ranking.
