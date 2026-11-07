@@ -1,4 +1,4 @@
-Ferrum v0.1.0-beta.1 - Windows x64 portable
+Ferrum v0.1.0-beta.2 - Windows x64 portable
 
 Extract the whole ZIP into a writable folder, then run ferrum.exe yourself.
 Ferrum always starts hidden. Press Alt+Space (or the saved/fallback shortcut),

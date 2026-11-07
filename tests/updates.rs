@@ -375,7 +375,7 @@ fn local_fixture_transport_reads_only_local_json_and_reports_missing_file() {
         100,
     )
     .unwrap();
-    assert_eq!(p.release.unwrap().tag, "v0.1.0-beta.2");
+    assert_eq!(p.release.unwrap().tag, "v0.1.0-beta.3");
     let missing = LocalFixture(
         std::path::PathBuf::from(env!("CARGO_MANIFEST_DIR"))
             .join("target/nonexistent-fixture-for-update-test.json"),

@@ -2,7 +2,7 @@
 
 <img src="Ferrum.png" alt="Ferrum icon" width="96">
 
-**v0.1.0-beta.1 - owner-review release candidate**
+**v0.1.0-beta.2 - owner-review release candidate**
 
 Ferrum is a native Rust Windows launcher for applications, installed games, local
 filenames and explicit website searches. It stays hidden until you summon its
@@ -40,8 +40,8 @@ Clean-machine GUI compatibility still requires the maintainer's manual test.
 
 Once approved, use the repository's Releases page to obtain these matching files:
 
-- `Ferrum-v0.1.0-beta.1-windows-x64-setup.exe`
-- `Ferrum-v0.1.0-beta.1-windows-x64-portable.zip`
+- `Ferrum-v0.1.0-beta.2-windows-x64-setup.exe`
+- `Ferrum-v0.1.0-beta.2-windows-x64-portable.zip`
 - `SHA256SUMS.txt` and `RELEASE_NOTES.md`
 
 Verify SHA-256 against the approved release channel before manual execution.

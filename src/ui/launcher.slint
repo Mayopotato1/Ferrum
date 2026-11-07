@@ -85,7 +85,15 @@ export component Launcher inherits Window {
         search.set-selection-offsets(cursor-byte, cursor-byte);
         root.changed(value);
     }
-    public function prepare-opening() { root.palette-visible = false; }
+    public function prepare-opening() {
+        root.palette-visible = false;
+        root.selected = 0;
+        if (root.query != "") {
+            root.query = "";
+            // Invalidate outstanding results through the ordinary search callback.
+            root.changed("");
+        }
+    }
     public function start-opening() { root.update-tag = root.pending-update; root.pending-update = ""; root.palette-visible = true; }
     public function cancel-opening() { root.palette-visible = false; }
     states [ shown when root.palette-visible: {

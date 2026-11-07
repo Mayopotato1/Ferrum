@@ -1,8 +1,8 @@
 # Reproducible Windows release procedure
 
 The source checkout remains the same Ferrum application. Release version is read
-from Cargo.toml; no customer-facing phase label is used. Beta v0.1.0-beta.1 maps to
-Windows numeric 0.1.0.1. In general beta.N maps to revision N (1..65534); a final
+from Cargo.toml; no customer-facing phase label is used. Beta v0.1.0-beta.2 maps to
+Windows numeric 0.1.0.2. In general beta.N maps to revision N (1..65534); a final
 major.minor.patch uses revision 65535 so it orders after those betas. Resource,
 About and CLI versions derive from the package version; installer metadata is
 read back from the built executable. Update current-version test expectations
@@ -31,7 +31,7 @@ executables are deliberately not overwritten or terminated.
 Run scripts/release.ps1 to rebuild/validate and package, or pass -Binary with an
 already validated executable of exactly the expected branding/version. The MIT
 source license is included; publication still requires the release-policy approvals.
-Output goes to dist/v0.1.0-beta.1. Existing staging/output directories are refused
+Output goes to dist/v0.1.0-beta.2. Existing staging/output directories are refused
 rather than silently retaining stale assets/hashes; move previous candidates
 aside deliberately inside the workspace before rebuilding.
 

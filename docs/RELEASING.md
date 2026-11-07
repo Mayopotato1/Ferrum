@@ -23,7 +23,7 @@ Before publication:
 ## Publishable source without private development history
 
 The existing development repository has historical local paths/reports. Do NOT
-blindly push that history. The generated Ferrum-v0.1.0-beta.1-source.zip is an
+blindly push that history. The generated Ferrum-v0.1.0-beta.2-source.zip is an
 allowlisted source tree: code, tests, resources, packaging, workflows and current
 documentation; no .git, private reports, target outputs, caches or user config.
 The local publication-source directory is a separate audited checkout of the

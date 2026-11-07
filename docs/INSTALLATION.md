@@ -1,4 +1,4 @@
-# Ferrum v0.1.0-beta.1 installation
+# Ferrum v0.1.0-beta.2 installation
 
 This is an unsigned Windows x64 beta candidate. The maintainer has not completed
 the clean-machine installation/upgrade/uninstall or remaining earlier GUI tests.
@@ -17,7 +17,7 @@ Actual clean-machine GUI behavior remains a manual release test.
 
 ## Installer
 
-1. Obtain Ferrum-v0.1.0-beta.1-windows-x64-setup.exe and SHA256SUMS.txt from the
+1. Obtain Ferrum-v0.1.0-beta.2-windows-x64-setup.exe and SHA256SUMS.txt from the
    maintainer's approved release source. Compare its SHA-256 before running it.
 2. Close every running Ferrum / earlier launcher yourself using Exit. Setup
    checks the shared mutex and refuses to proceed while a participating copy runs.
@@ -77,7 +77,7 @@ targets. Installer file logs, not broad wildcard deletion, determine program fil
 
 ## Portable ZIP
 
-Extract Ferrum-v0.1.0-beta.1-windows-x64-portable.zip and run ferrum.exe manually.
+Extract Ferrum-v0.1.0-beta.2-windows-x64-portable.zip and run ferrum.exe manually.
 It requires no installation but still uses the same AppData preferences/cache.
 It creates no startup entry unless you explicitly enable the preference. Do not
 run portable and installed copies together: the shared mutex admits one instance.

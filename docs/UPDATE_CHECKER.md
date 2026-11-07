@@ -19,7 +19,7 @@ and build script; no repository variable or secret is needed for update checks.
 ```powershell
 ./scripts/Build-Release.ps1
 ./scripts/Assert-UpdateSource.ps1 -Binary ./target/x86_64-pc-windows-msvc/release/ferrum.exe
-./scripts/release.ps1 -Binary ./target/x86_64-pc-windows-msvc/release/ferrum.exe -ExpectedTag v0.1.0-beta.1
+./scripts/release.ps1 -Binary ./target/x86_64-pc-windows-msvc/release/ferrum.exe -ExpectedTag v0.1.0-beta.2
 ```
 
 Beta accepts newer beta.N and stable versions. Stable distribution builds should

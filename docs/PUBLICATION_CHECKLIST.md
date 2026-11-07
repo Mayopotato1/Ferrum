@@ -1,6 +1,6 @@
-# First-public-beta publication checklist
+# Beta release publication checklist
 
-The prepared version is **v0.1.0-beta.1**, MIT source, unsigned Windows x64.
+The prepared version is **v0.1.0-beta.2**, MIT source, unsigned Windows x64.
 The updater source is compile-time pinned to Mayopotato1/Ferrum, beta channel.
 Automatic checking defaults Off. No release assets are downloaded by the updater.
 
@@ -15,9 +15,9 @@ Automatic checking defaults Off. No release assets are downloaded by the updater
   development reports stay local. The artwork source remains unchanged.
 - Actions references checked against their exact upstream commit IDs. Workflows
   have read-only defaults, pinned Rust/actions/Inno, locked dependencies, normalized
-  ZIP metadata, and separately gated draft-only publication. CI itself has not run.
+  ZIP metadata, and separately gated draft-only publication. Check CI status for the exact release commit.
 
-See the local PUBLICATION_PREPARATION_REPORT.md and dist/v0.1.0-beta.1 verification
+See the local PUBLICATION_PREPARATION_REPORT.md and dist/v0.1.0-beta.2 verification
 files for observed results. These do not establish GUI or installer correctness.
 
 ## Required owner/manual checks
@@ -64,7 +64,8 @@ git push -u origin main:main
 This preparation does not execute that command. If remote main advances first,
 fetch/reconcile it without force-pushing and re-review the final tracked tree.
 Wait for CI and inspect its logs. Source push is not approval to tag or release.
-No tag command is provided until manual release checks and release approval exist.
+A release tag can be prepared locally after validation. Do not push it while the
+manual release gates remain incomplete; a tag push triggers the release workflow.
 
 ## Local rebuild commands
 
@@ -73,8 +74,8 @@ python -m unittest discover -s packaging/tests -v
 ./scripts/Build-Release.ps1
 ./scripts/Assert-UpdateSource.ps1 -Binary ./target/x86_64-pc-windows-msvc/release/ferrum.exe
 # Archive existing dist/version and target/release-staging/version before packaging.
-./scripts/release.ps1 -Binary ./target/x86_64-pc-windows-msvc/release/ferrum.exe -ExpectedTag v0.1.0-beta.1
-python scripts/verify_release.py dist/v0.1.0-beta.1 --payload target/release-staging/v0.1.0-beta.1
+./scripts/release.ps1 -Binary ./target/x86_64-pc-windows-msvc/release/ferrum.exe -ExpectedTag v0.1.0-beta.2
+python scripts/verify_release.py dist/v0.1.0-beta.2 --payload target/release-staging/v0.1.0-beta.2
 python scripts/audit_publication.py .
 ```
 

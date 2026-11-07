@@ -1,4 +1,4 @@
-# Ferrum v0.1.0-beta.1 manual release checklist
+# Ferrum v0.1.0-beta.2 manual release checklist
 
 Status: **Not performed**. No Ferrum GUI or installer was executed during this
 packaging phase. Headless tests cannot establish focus, appearance, graphics
@@ -82,7 +82,7 @@ fixture build steps; the fixture mode cannot be built into release binaries.
 
 1. Exit the currently running Ferrum yourself before testing another copy. Start
    the candidate manually: it must start hidden. Alt+Space must open promptly.
-2. Open Settings. Updates must show installed version 0.1.0-beta.1, automatic
+2. Open Settings. Updates must show installed version 0.1.0-beta.2, automatic
    checking Off on a fresh isolated profile, and clear update status.
    Check for updates now must work even with automatic Off; no releases means up
    to date only after a successful response, while offline/rate-limit errors must
@@ -110,3 +110,11 @@ fixture build steps; the fixture mode cannot be built into release binaries.
 9. Restore the original process environment after fixture tests. Keep the fixture
    build and its isolated profile out of distribution. Remaining installer,
    startup ownership, licensing and public-release checks above still apply.
+
+## Beta.2 query-reset regression
+
+Type an ordinary search, close with Escape, then reopen with Alt+Space: the input
+must be empty and focused. Repeat using hotkey hide, Hide, outside-click dismissal,
+and after launching a result. Check @ queries as well. Type immediately after
+reopening; a late result from the previous query must not replace the new results.
+These GUI steps are user-run only; automated validation never opens the overlay.
