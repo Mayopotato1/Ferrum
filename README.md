@@ -1,4 +1,3 @@
-<img width="1364" height="1364" alt="Ferrum" src="https://github.com/user-attachments/assets/4e084b93-a381-4465-a4e6-886652acb33d" />
 # Ferrum
 
 **A fast, lightweight Spotlight-style launcher for Windows, built with Rust.**
