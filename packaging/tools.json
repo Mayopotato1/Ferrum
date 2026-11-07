@@ -1,0 +1,61 @@
+{
+  "inno": {
+    "version": "6.7.4",
+    "url": "https://github.com/jrsoftware/issrc/releases/download/is-6_7_4/innosetup-6.7.4.exe",
+    "sha256": "a549929319f9120716677c685535ca4671e4b937b5fdc87e2585f32d8eb30e8c",
+    "publisher": "Pyrsys B.V.",
+    "compiler_files": {
+      "Compil32.exe": "cc265088e69b4f39ecc8d0ffe92d01e4a24b2fd4712bb7533735942efb3e12f3",
+      "Default.isl": "42a5f6f7dbbddf26cc278f67db5d894235ce1d126a6856702e31bd02023a1316",
+      "is7z.dll": "f97cda058bfe97a7e9ced5cde7018bbc26e35155c3c7405c6146808f8d06806d",
+      "is7z.dll.issig": "42ac47dfccae85596984b121f5fad33faee6b56d6c50bfc89f31ea96bff7c1b4",
+      "is7zxa.dll": "e3cef67858843c554100126f04932be327097777865e4eb82951dd97cdb28942",
+      "is7zxa.dll.issig": "8a94c3247cf5e99143377c37adbe1d58798c44ada89871707aab7902a3287838",
+      "is7zxr.dll": "728b368dc4f2831cc4d13291f46eeaf9f89b7e3a91356cf793c330e953b8e17b",
+      "is7zxr.dll.issig": "209264d479698ea7e9aa375fa1f692cae01d79a6b023b75716c625a5b821c413",
+      "isbunzip.dll": "31d04c1e4bfdfa34704c142fa98f80c0a3076e4b312d6ada57c4be9d9c7dcf26",
+      "isbunzip.dll.issig": "d446db9995621893741d721434297311576269f1622f0bb103ba48b94b2fa744",
+      "isbzip.dll": "8072e83385afc4a84006271a87a11fc0a22b149cbd77322669ca56c470d28ced",
+      "isbzip.dll.issig": "145612af36209f29ec96669550e5eebca3d2b0240f2e888c35bd599559be9a4a",
+      "ISCC.exe": "f02fa0e5f237b47d7ed1edae9b991866ec94fe02af61eb6a73e94f92fe8e0604",
+      "ISCmplr.dll": "236555054ca65194c69544b4ef1d49ea345259745f5c4a2005aca7b5674e7cff",
+      "ISCmplr.dll.issig": "00a3804b7ac0e1a5723f1399ddcd337a5e7c79f18571046e29f6be1ff4067541",
+      "islzma.dll": "8af307ce3738ab1d37cc7e76b2f76615e2045597d4367c3e40d52b5f2fbd353d",
+      "islzma.dll.issig": "c49d4b2cc6499846118dc376c9c66081744531edc932ffa979698d68ec0662b2",
+      "islzma32.exe": "fd977c3ac44c56997d2b4fd6647e97e2457c43991a6ae26a4b2252c0eabdfebb",
+      "islzma32.exe.issig": "81039bd05963f8b02e1396a6fb5f3f7df7fd1ce1655f7a960f6c0b549489c562",
+      "islzma64.exe": "87a50495aff580b78cad57906a765d3cf28ca508cfa95c24c1247c286ddf71b2",
+      "islzma64.exe.issig": "e74ea022afb90bbff710d9952a1069767c970484b1be596771ae7d109932f716",
+      "ISPP.dll": "140b2d822bf30ed8aa3fed64764b2d2b92a80e0b9aafc1b8ff3e409706b9207e",
+      "ISPP.dll.issig": "cbce1b641b82715a23bbe773be7fba496b4b30ce345a9de461434cd3f4cc09aa",
+      "ISPPBuiltins.iss": "bc765e1121a95dc602ca1248b484418cecc6db9d4b6f4dae58e9a2c35262527c",
+      "isscint.dll": "ddd2748bc79122a67eed77f6039f6508245e0aa7f0fdbbfca99d1e922a1e8ce4",
+      "isscint.dll.issig": "c54c30c27c503e86c70116ca9db840b0b799a0610fd8644dd53194a96afe7207",
+      "ISSigTool.exe": "574ddba0827ce5635e47bacf4033155667f6faf66675a6ea95df9a8fc65c8a07",
+      "isunzlib.dll": "8287d0e287a66ee78537c8d1d98e426562b95c50f569b92cea9ce36a9fa57e64",
+      "isunzlib.dll.issig": "0a26dffaa4b47edc9cf6c730bb0cb38dc12a3de94742256aa1c22603e1be9309",
+      "iszlib.dll": "14c0d4a2a41572384f8309cdf03de5c6e7ed46bef64cce70d989b2665eff1a47",
+      "iszlib.dll.issig": "f41ea7cc5f9604bfebba8d101bef7c3f28b9d7e8f4c5c99e71030a28682113f9",
+      "Setup.e32": "0c94d43e2c0f4d8371a2e1813b5446f3bc85ece3211dc4a6676159b534bbc483",
+      "Setup.e32.issig": "72272447e2510bcbb8ac37dd6a4ae5110ae4779695552f3f5484e9a884aa3152",
+      "SetupCustomStyle.e32": "6848503904920ba8dc5e0d5af45091c081d1f03ac85d454db0ad31e522c92b31",
+      "SetupCustomStyle.e32.issig": "1f953ace78963ba335f4207b14dc1f3237aa4437df74e1c52c6fa5167d781779",
+      "SetupLdr.e32": "998c58046b0808e75a030859962e1fe1ea600e8a5cf4646b09aadce77342c1a9",
+      "SetupLdr.e32.issig": "26fa80ee8ca6a8155a3f3b21437e22812412abc49d26078b3faa13de21ce9f57",
+      "SetupLdr.e64": "76238ce87139bd7d888b72b5694a4e1d5f3f73e8c9a62cc8a2a0e124e455e4f3",
+      "SetupLdr.e64.issig": "840af11f2b7990a5995522da1dd662a5e4b0a056b5c617fde57fa088f15dedf2"
+    }
+  },
+  "unpacker": {
+    "version": "2.71.3",
+    "url": "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/418937d9913c67b9abbe93a2e9e725a06f0f2be7/innounp-2/bin/innounp-2.zip",
+    "sha256": "f8e45c9676bebc7d7570108ab572673b541fcf7a7d3d24a04319ac6b5315b4e8",
+    "source_commit": "418937d9913c67b9abbe93a2e9e725a06f0f2be7"
+  },
+  "audit": {
+    "version": "0.22.2",
+    "url": "https://github.com/rustsec/rustsec/releases/download/cargo-audit/v0.22.2/cargo-audit-x86_64-pc-windows-msvc-v0.22.2.zip",
+    "sha256": "0a7316540862c13d954f648917ceacca593747baed6eec180fafa590be2710ab"
+  },
+  "rust_toolchain": "1.99.1"
+}

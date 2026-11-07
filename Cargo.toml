@@ -1,0 +1,38 @@
+[package]
+name = "ferrum"
+version = "0.1.0-beta.1"
+license = "MIT"
+edition = "2024"
+rust-version = "1.92"
+
+[lib]
+# Keep the internal library API stable; product/package and binary are Ferrum.
+name = "spotlight_prototype"
+
+[[bin]]
+name = "ferrum"
+path = "src/main.rs"
+
+[features]
+# Local, debug-only manual playtest transport. Build script rejects release builds.
+update-fixture = []
+
+[dependencies]
+anyhow = "1"
+semver = "1"
+httpdate = "1"
+chrono = { version = "0.4", default-features = false, features = ["std"] }
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "native-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+unicode-normalization = "0.1"
+nucleo-matcher = "0.3.1"
+strsim = "0.11.1"
+keyvalues-parser = "0.2.4"
+url = "2"
+rusqlite = { version = "0.38", features = ["bundled"] }
+slint = { version = "=1.18.1", default-features = false, features = ["std", "backend-winit", "renderer-software", "renderer-femtovg", "compat-1-2", "unstable-winit-030"] }
+windows = { version = "0.62.2", features = ["Win32_Foundation", "Win32_Security", "Win32_Graphics_Gdi", "Win32_Graphics_Dwm", "Win32_UI_HiDpi", "Win32_System_Com", "Win32_System_Registry", "Win32_System_Threading", "Win32_System_ProcessStatus", "Win32_UI_Shell", "Win32_UI_Shell_Common", "Win32_UI_WindowsAndMessaging", "Win32_UI_Input_KeyboardAndMouse", "Win32_Storage_FileSystem", "Win32_System_Com_StructuredStorage", "Win32_System_Variant", "Win32_UI_Shell_PropertiesSystem"] }
+
+[build-dependencies]
+serde_json = "1"

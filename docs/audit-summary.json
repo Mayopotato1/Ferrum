@@ -1,0 +1,56 @@
+{
+  "scan_date": "2026-11-07",
+  "tool": "cargo-audit 0.22.2",
+  "advisory_database": {
+    "advisory-count": 1422,
+    "last-commit": "309392b18f6b17022f82c701f300433126901068",
+    "last-updated": "2026-11-06T16:34:32+01:00"
+  },
+  "cargo_lock_sha256": "2f8b103f4f4e7c7cb7619594802388a762f1290972ec3ed1c04f7932ed139854",
+  "vulnerability_count": 0,
+  "maintenance_notices": [
+    {
+      "package": "bincode",
+      "version": "2.0.1",
+      "id": "RUSTSEC-2025-0141",
+      "title": "Bincode is unmaintained",
+      "in_windows_build": false
+    },
+    {
+      "package": "pin-utils",
+      "version": "0.1.1",
+      "id": "RUSTSEC-2026-0441",
+      "title": "`pin-utils` is unmaintained",
+      "in_windows_build": true
+    },
+    {
+      "package": "ttf-parser",
+      "version": "0.25.1",
+      "id": "RUSTSEC-2026-0192",
+      "title": "`ttf-parser` is unmaintained",
+      "in_windows_build": false
+    },
+    {
+      "package": "zbus_names",
+      "version": "4.3.5",
+      "id": "RUSTSEC-2026-0371",
+      "title": "`zbus_names` is unmaintained",
+      "in_windows_build": false
+    },
+    {
+      "package": "zvariant",
+      "version": "5.15.1",
+      "id": "RUSTSEC-2026-0370",
+      "title": "`zvariant` is unmaintained",
+      "in_windows_build": false
+    },
+    {
+      "package": "zvariant_derive",
+      "version": "5.15.1",
+      "id": "RUSTSEC-2026-0372",
+      "title": "`zvariant_derive` is unmaintained",
+      "in_windows_build": false
+    }
+  ],
+  "scan_scope": "Current configured Phase 1.6 Cargo.lock; locally rerun 2026-11-07 against recorded advisory database snapshot"
+}

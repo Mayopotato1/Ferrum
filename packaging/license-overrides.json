@@ -1,0 +1,78 @@
+{
+  "clipboard-win-5.4.3": [
+    {
+      "path": "packaging/license-overrides/clipboard-win-5.4.3/LICENSE",
+      "url": "https://raw.githubusercontent.com/DoumanAsh/clipboard-win/ed27008ae5d1f10cfbb266de039f0fb35fd05a56/LICENSE",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    }
+  ],
+  "gl_generator-0.14.0": [
+    {
+      "path": "packaging/license-overrides/gl_generator-0.14.0/LICENSE",
+      "url": "https://raw.githubusercontent.com/brendanzab/gl-rs/ea503e8d5fb6d73c6030e6191ce738cd3bf3433e/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ],
+  "khronos_api-3.1.0": [
+    {
+      "path": "packaging/license-overrides/khronos_api-3.1.0/LICENSE",
+      "url": "https://raw.githubusercontent.com/brendanzab/gl-rs/f150967b1c44ae888e6676f93f639ebc82771bdc/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ],
+  "lyon_algorithms-1.0.22": [
+    {
+      "path": "packaging/license-overrides/lyon_algorithms-1.0.22/LICENSE-MIT",
+      "url": "https://raw.githubusercontent.com/nical/lyon/db98d26a1a90076a7a894262dcb51117eef643c8/LICENSE-MIT",
+      "sha256": "80f275e90d799911ed3830a7f242a2ef5a4ade2092fe0aa07bfb2d2cf2f2b95e"
+    },
+    {
+      "path": "packaging/license-overrides/lyon_algorithms-1.0.22/LICENSE-APACHE",
+      "url": "https://raw.githubusercontent.com/nical/lyon/db98d26a1a90076a7a894262dcb51117eef643c8/LICENSE-APACHE",
+      "sha256": "216486f29671a4262efe32af6d84a75bef398127f8c5f369b5c8305983887a06"
+    }
+  ],
+  "lyon_extra-1.1.0": [
+    {
+      "path": "packaging/license-overrides/lyon_extra-1.1.0/LICENSE-MIT",
+      "url": "https://raw.githubusercontent.com/nical/lyon/56219c95c658d4f39de7b190d98e57d5773ba241/LICENSE-MIT",
+      "sha256": "80f275e90d799911ed3830a7f242a2ef5a4ade2092fe0aa07bfb2d2cf2f2b95e"
+    },
+    {
+      "path": "packaging/license-overrides/lyon_extra-1.1.0/LICENSE-APACHE",
+      "url": "https://raw.githubusercontent.com/nical/lyon/56219c95c658d4f39de7b190d98e57d5773ba241/LICENSE-APACHE",
+      "sha256": "216486f29671a4262efe32af6d84a75bef398127f8c5f369b5c8305983887a06"
+    }
+  ],
+  "lyon_geom-1.0.20": [
+    {
+      "path": "packaging/license-overrides/lyon_geom-1.0.20/LICENSE-MIT",
+      "url": "https://raw.githubusercontent.com/nical/lyon/db98d26a1a90076a7a894262dcb51117eef643c8/LICENSE-MIT",
+      "sha256": "80f275e90d799911ed3830a7f242a2ef5a4ade2092fe0aa07bfb2d2cf2f2b95e"
+    },
+    {
+      "path": "packaging/license-overrides/lyon_geom-1.0.20/LICENSE-APACHE",
+      "url": "https://raw.githubusercontent.com/nical/lyon/db98d26a1a90076a7a894262dcb51117eef643c8/LICENSE-APACHE",
+      "sha256": "216486f29671a4262efe32af6d84a75bef398127f8c5f369b5c8305983887a06"
+    }
+  ],
+  "lyon_path-1.0.19": [
+    {
+      "path": "packaging/license-overrides/lyon_path-1.0.19/LICENSE-MIT",
+      "url": "https://raw.githubusercontent.com/nical/lyon/56219c95c658d4f39de7b190d98e57d5773ba241/LICENSE-MIT",
+      "sha256": "80f275e90d799911ed3830a7f242a2ef5a4ade2092fe0aa07bfb2d2cf2f2b95e"
+    },
+    {
+      "path": "packaging/license-overrides/lyon_path-1.0.19/LICENSE-APACHE",
+      "url": "https://raw.githubusercontent.com/nical/lyon/56219c95c658d4f39de7b190d98e57d5773ba241/LICENSE-APACHE",
+      "sha256": "216486f29671a4262efe32af6d84a75bef398127f8c5f369b5c8305983887a06"
+    }
+  ],
+  "taffy-0.10.1": [
+    {
+      "path": "packaging/license-overrides/taffy-0.10.1/LICENSE.md",
+      "url": "https://raw.githubusercontent.com/DioxusLabs/taffy/639f0acdd20f914f847abffbeaa903d66cae4882/LICENSE.md",
+      "sha256": "a7083ef3dd41a65eeb2162c2c091b0082e2724fb4c6ed029b363c7840d244ecd"
+    }
+  ]
+}

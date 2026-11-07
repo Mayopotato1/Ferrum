@@ -1,0 +1,27 @@
+1 ICON "@ICON_PATH@"
+1 VERSIONINFO
+FILEVERSION @NUMERIC_VERSION@
+PRODUCTVERSION @NUMERIC_VERSION@
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0
+FILEOS 0x40004L
+FILETYPE 1
+FILESUBTYPE 0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904b0"
+    BEGIN
+      VALUE "FileDescription", "Ferrum\0"
+      VALUE "FileVersion", "@DOTTED_VERSION@\0"
+      VALUE "InternalName", "ferrum\0"
+      VALUE "OriginalFilename", "ferrum.exe\0"
+      VALUE "ProductName", "Ferrum\0"
+      VALUE "ProductVersion", "@SEMVER@\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END

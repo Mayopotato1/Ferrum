@@ -1,0 +1,20 @@
+{
+  "source": "Ferrum.png",
+  "source_sha256": "18ffe058ad0c554a302811dd2709c000bdc01e58d38a3d8bc26d3af5aa0eb05b",
+  "source_width": 1364,
+  "source_height": 1364,
+  "source_alpha_range": [
+    255,
+    255
+  ],
+  "derived_sizes": [
+    16,
+    24,
+    32,
+    48,
+    64,
+    128,
+    256
+  ],
+  "resampling": "Pillow 10.4.0 LANCZOS; aspect ratio retained; original not modified"
+}

@@ -1,0 +1,132 @@
+import { VerticalBox, HorizontalBox, Button, CheckBox, ComboBox, Slider, ScrollView, Palette, AboutSlint } from "std-widgets.slint";
+
+component SectionTitle inherits Text {
+    color: #f0f2f5; font-size: 15px; font-weight: 600;
+}
+component Help inherits Text {
+    color: #b0b8c6; font-size: 12px; wrap: word-wrap;
+}
+export component Settings inherits Window {
+    title: "Ferrum Settings";
+    in property <string> application-version;
+    preferred-width: 580px; preferred-height: 670px;
+    min-width: 480px; min-height: 400px;
+    background: #22252b;
+    default-font-family: "Segoe UI";
+    default-font-size: 14px;
+    in property <[string]> providers;
+    in property <[string]> shortcuts;
+    in-out property <int> provider-index;
+    in-out property <int> shortcut-index;
+    in-out property <bool> startup-enabled;
+    in property <bool> startup-can-remove;
+    in-out property <float> opacity-percent: 92;
+    in property <string> startup-status;
+    in property <string> shortcut-status;
+    in property <string> opacity-status;
+    in property <string> message;
+    in property <bool> editable: true;
+    in property <bool> shortcut-busy: false;
+    callback provider-changed(int);
+    callback shortcut-changed(int);
+    callback startup-changed(bool);
+    callback opacity-changed(int);
+    in-out property <bool> updates-automatic;
+    in property <bool> updates-busy;
+    in property <string> updates-status: "Update source not configured.";
+    in property <string> updates-last;
+    in property <string> update-version;
+    callback updates-changed(bool);
+    callback updates-check();
+    callback update-view();
+    callback dismiss();
+    callback quit();
+    init => { Palette.color-scheme = ColorScheme.dark; }
+    keys := FocusScope {
+        key-pressed(event) => {
+            if (event.text == Key.Escape) { root.dismiss(); return accept; }
+            return reject;
+        }
+        VerticalLayout {
+            padding: 24px; spacing: 16px;
+            Text { text: "Settings"; color: #f0f2f5; font-size: 24px; font-weight: 600; }
+            if root.message != "": Help { text: root.message; color: #f0ada6; max-height: 96px; }
+            ScrollView {
+                vertical-stretch: 1;
+                VerticalBox {
+                    padding: 0px; spacing: 16px;
+                    SectionTitle { text: "General"; }
+                    CheckBox {
+                        text: "Launch Ferrum on Windows startup";
+                        checked <=> root.startup-enabled;
+                        enabled: root.editable;
+                        toggled => { root.startup-changed(self.checked); }
+                    }
+                    Help { text: root.startup-status; }
+                    if root.startup-can-remove: Button {
+                        text: "Remove startup registration";
+                        enabled: root.editable;
+                        clicked => { root.startup-changed(false); }
+                    }
+                    Help { text: "The launcher always starts quietly in the background. Use your shortcut to search."; }
+                    SectionTitle { text: "Search"; }
+                    HorizontalBox {
+                        padding: 0px;
+                        Help { text: "Default search engine"; vertical-alignment: center; }
+                        ComboBox {
+                            model: root.providers; current-index <=> root.provider-index;
+                            enabled: root.editable;
+                            accessible-label: "Default search engine";
+                            selected(value) => { root.provider-changed(self.current-index); }
+                        }
+                    }
+                    Help { text: "Applies to general web search, Shift+Enter and ?. Your @ shortcuts keep their own providers."; }
+                    SectionTitle { text: "Keyboard"; }
+                    ComboBox {
+                        model: root.shortcuts; current-index <=> root.shortcut-index;
+                        enabled: root.editable && !root.shortcut-busy;
+                        accessible-label: "Launcher shortcut";
+                        selected(value) => { root.shortcut-changed(self.current-index); }
+                    }
+                    Help { text: root.shortcut-status; }
+                    SectionTitle { text: "Appearance"; }
+                    HorizontalBox {
+                        padding: 0px;
+                        Help { text: "Background opacity"; }
+                        Text { text: round(root.opacity-percent) + "%"; color: #f0f2f5; horizontal-alignment: right; }
+                    }
+                    Slider {
+                        minimum: 85; maximum: 100; step: 1;
+                        value <=> root.opacity-percent;
+                        enabled: root.editable;
+                        accessible-label: "Background opacity, 85 to 100 percent";
+                        released(value) => { root.opacity-changed(round(value)); }
+                    }
+                    Help { text: root.opacity-status; }
+                    SectionTitle { text: "Updates"; }
+                    Help { text: "Installed version: " + root.application-version; }
+                    CheckBox {
+                        text: "Check for updates automatically";
+                        checked <=> root.updates-automatic;
+                        enabled: root.editable;
+                        toggled => { root.updates-changed(self.checked); }
+                    }
+                    Help { text: "Check GitHub for new Ferrum releases approximately once a day."; }
+                    Help { text: root.updates-status; }
+                    Help { text: root.updates-last; }
+                    Button { text: "Check for updates now"; enabled: root.editable && !root.updates-busy; clicked => { root.updates-check(); } }
+                    if root.update-version != "": Button { text: "Open release page — " + root.update-version; clicked => { root.update-view(); } }
+                    SectionTitle { text: "About"; }
+                    Help { text: "Ferrum " + root.application-version + "\nNative app, game, file and website search. Preferences save when changed."; }
+                    AboutSlint { }
+                }
+            }
+            HorizontalBox {
+                padding: 0px; spacing: 12px;
+                Button { text: "Exit application"; clicked => { root.quit(); } }
+                Rectangle { horizontal-stretch: 1; }
+                Button { text: "Close Settings"; clicked => { root.dismiss(); } }
+            }
+        }
+    }
+}
